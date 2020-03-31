@@ -1,4 +1,4 @@
-# Distance to Coast - Welcome!
+# Getting Started
 ---
 
 ### Before you begin
