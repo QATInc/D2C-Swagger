@@ -1,0 +1,23 @@
+
+swagger: '2.0'
+info:
+  title: Distance To Coast
+  description: Determines the distance to the top three nearest coastlines from a given address or geographic point
+  version: 1.0.0
+host: d2c-service-name-v6tam5b4rq-uc.a.run.app
+schemes:
+  - https
+produces:
+  - application/json
+paths:
+  /distance2coast:
+    post:
+      summary: Get top 3 nearest coastlines to a given lat - lng or valid street address
+      operationId: d2c
+      x-google-backend:
+        address: https://us-central1-a-new-bi-1474057880268.cloudfunctions.net/distance-to-coast
+      responses:
+        '200':
+          description: A very successful response
+          schema:
+            type: string
